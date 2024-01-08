@@ -68,3 +68,42 @@ a {
 .nav__element:last-child {
     padding-right: 136px;
 }
+
+/*sekcja z bannerem*/
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner__box {
+    margin-top: 130px;
+    text-align: center;
+}
+.banner__header {
+    font-size: 49px;
+    color: var(--color-black);
+    margin-bottom: 20px;
+}
+.banner__p {
+    font-size: 16px;
+    font-family: var(--font-open-sans);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.btn {
+    border: 3px solid #08A6E4;
+    border-radius: 40px;
+    background-color: var(--color-primary);
+    font-size: 16px;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 22px 157px;
+    box-shadow: 3px 10px 14px var(--color-primary-shadow);
+    margin-top: 20px;
+}
+.banner__img {
+    width: 100%;
+}
