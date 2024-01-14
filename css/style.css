@@ -461,6 +461,11 @@ h2 {
     background: transparent;
     line-height: 2.625rem;
 }
+
+.form__agreement {
+    margin-top: 30px;
+}
+
 .form__checkbox {
         display: block;
         position: relative;
@@ -507,6 +512,30 @@ h2 {
     align-self: flex-end;
     margin-top: 20px;
 }
-.form__agreement {
-    margin-top: 30px;
+
+
+/*stopka !!!*/
+
+.footer {
+    box-shadow: 0 -5px 40px #00000029;
+    padding: 20px 0;
+}
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.logo__copy{
+    color: #A5A5A5;
+    font-size: 11px;
+    line-height: 15px;
+    margin-top: 5px;
+}
+.footer__icons a:first-of-type {
+    margin-left: 25px;
 }
