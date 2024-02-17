@@ -1,47 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta
-            name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BestShop</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,400,700,800&display=swap&subset=latin-ext" rel="stylesheet"/>
+    <link rel="stylesheet" href="scss/main.scss">
 </head>
 <body>
 
-<!--Nawigacja plus logo-->
+<!--sekcja nawigacja plus logo-->
 
-    <header class="header">
-        <div class="header__container container">
-            <a href="#" class="logo">BestShop</a>
-            <nav>
-                <ul class="header__nav">
-                    <li class="nav__element">
-                        <a href="#why-us" class="nav__link">Why Us</a>
-                    </li>
-                    <li class="nav__element">
-                        <a href="#benefits" class="nav__link">Benefits</a>
-                    </li>
-                    <li class="nav__element">
-                        <a href="#prices" class="nav__link">Prices</a>
-                    </li>
-                    <li class="nav__element">
-                        <a href="#contact" class="nav__link">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<header class="header">
+    <div class="header__container container">
+        <a href="#" class="logo">BestShop</a>
+        <nav>
+            <input type="checkbox" class="menu__btn" id="menu__btn">
+            <label for="menu__btn" class="menu__toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="header__nav">
+                <li class="nav__element"><a href="#why-us" class="nav__link">Why us</a></li>
+                <li class="nav__element"><a href="#benefits" class="nav__link">Benefits</a></li>
+                <li class="nav__element"><a href="#prices" class="nav__link">Prices</a></li>
+                <li class="nav__element"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
 
 <!--sekcja z bannerem-->
 
@@ -49,7 +43,7 @@
         <div class="banner__box">
             <h1 class="banner__header">Sell More!</h1>
             <p class="banner__p">Open shop on our platform and increase your sales</p>
-            <a href="#" class="btn">Open your shop</a>
+            <a href="#" class="btn btn--primary btn--large">Open your shop</a>
         </div>
         <img src="assets/Background.png" alt="" class="banner__img">
     </section>
@@ -92,54 +86,56 @@
 
 <!--sekcja benefits-->
 
-    <section class="benefits">
-        <div class="benefits container__container">
+<section class="benefits">
+    <div class="benefits__container container">
 
-            <div class="benefits__box benefits__box-notebook">
-                <div class="benefits__text">
-                    <h2 class="benefits__title">Be always first</h2>
-                    <p class="benefits__p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim veniam.
-                    </p>
-                </div>
-                <div class="benefits__image">
-                    <img src="assets/Macbook.png" alt="macbook"/>
-                </div>
+        <div class="benefits__single benefits__single--notebook">
+            <div class="benefits__text">
+                <h2 class="benefits__title">Be always first</h2>
+                <p class="benefits__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam.
+                </p>
             </div>
-
-            <div class="benefits__box benefits__box--phone">
-                <div class="benefits__text">
-                    <h2 class="benefits__title">Your shop is <br>where you are!</h2>
-                    <p class="benefits__p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim veniam.
-                    </p>
-                </div>
-                <div class="benefits__image">
-                    <img src="assets/iPhone.png" alt="iPhone"/>
-                </div>
+            <div class="benefits__image">
+                <img src="assets/Macbook.png" alt="macbook" />
             </div>
-
-            <div class="benefits__boxes">
-                <div class="benefits__box benefits__box--solo">
-                    <div class="benefits__text">
-                        <h2 class="benefits__title">Your shop is<br>where you are!</h2>
-                        <p class="benefits__p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="benefits__box benefits__box--image">
-                    <img src="assets/Trumpet.png" alt="trumpet">
-                </div>
-
-            </div>
-
         </div>
-    </section>
+
+        <div class="benefits__single benefits__single--phone">
+            <div class="benefits__text">
+                <h2 class="benefits__title">Your shop is<br>where you are!</h2>
+                <p class="benefits__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam.
+                </p>
+            </div>
+            <div class="benefits__image">
+                <img src="assets/iPhone.png" alt="iPhone" />
+            </div>
+        </div>
+
+        <div class="benefits__double">
+            <div class="benefits__single benefits__single--solo">
+                <div class="benefits__text">
+                    <h2 class="benefits__title">Your shop is<br>where you are!</h2>
+                    <p class="benefits__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam.
+                    </p>
+                </div>
+            </div>
+
+            <div class="benefits__single benefits__single--image">
+                <img src="assets/Trumpet.png" alt="Trumpet" />
+            </div>
+        </div>
+
+    </div>
+</section>
 
 
 <!--sekcja pricing-->
