@@ -1,0 +1,27 @@
+.footer {
+  box-shadow: 0 -5px 40px #00000029;
+  padding: 20px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .logo__copy{
+    color: #A5A5A5;
+    font-size: 11px;
+    line-height: 15px;
+    margin-top: 5px;
+  }
+
+  &__icons a:first-of-type {
+    margin-left: 25px;
+  }
+}
